@@ -27,7 +27,7 @@ public class MainMenuButtons : MonoBehaviour
         PlayerPrefs.Save();
 
         fade.message = "War takes you to strange places...both in the mind and in reality.";
-        fade.FadeWithMessageAndLoad("Game");
+        fade.FadeWithMessageAndLoad("First Level");
     }
 
     public void QuitButton()
