@@ -44,8 +44,6 @@ public class PlayerMovement : MonoBehaviour
             .With("Down", "<Keyboard>/s")
             .With("Left", "<Keyboard>/a")
             .With("Right", "<Keyboard>/d");
-
-        moveAction.AddBinding("<Gamepad>/leftStick");
     }
 
     private void OnEnable()

@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NARRATIVE.md",
+                "file": "ART DIRECTION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NARRATIVE"
+              "title": "ART DIRECTION"
             }
           }
         ]
@@ -35,7 +35,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "NARRATIVE.md",
+                "file": "ART DIRECTION.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -63,7 +63,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of NARRATIVE"
+              "title": "Graph of ART DIRECTION"
             }
           }
         ]
@@ -230,14 +230,14 @@
   },
   "active": "4ea108fec1f540a9",
   "lastOpenFiles": [
-    "ART DIRECTION.md",
+    "CORE MECHANICS.md",
     "GAME LOOP.md",
     "NARRATIVE.md",
-    "CORE MECHANICS.md",
-    "LEVELS/THE FOURTH LEVEL.md",
+    "LEVELS/THE FIRST LEVEL.md",
     "LEVELS/THE THIRD LEVEL.md",
     "LEVELS/THE SECOND LEVEL.md",
-    "LEVELS/THE FIRST LEVEL.md",
+    "LEVELS/THE FOURTH LEVEL.md",
+    "ART DIRECTION.md",
     "b.md",
     "a.md",
     "Yes.md",

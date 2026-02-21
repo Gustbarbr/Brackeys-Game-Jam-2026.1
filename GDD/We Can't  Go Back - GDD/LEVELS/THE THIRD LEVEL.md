@@ -1,18 +1,14 @@
 **This level represents the loss of distinction between self and enemy.**
 
-**Design Intent:** Enemies sharing the same appearance as the player represent the idea of fighting against those equal to oneself. The threat now carries a human identity.
+**Design Intent:** The player falls to someone stronger, representing the indistinguishable and inevitable nature of pain and death in war.
 
-It **appears** after the **player clicks** on the screen during the **showcase** of the **third phrase** of the game:  
+It **appears** on the screen during the **showcase** of the **third phrase** of the game:  
 **“I’m only following orders…”**
 
-In the **third level**, the **enemies use the same heart sprite as the player**. There are a total of **8 enemies**:
+The **player is represented by a heart** and can **shoot**. The **enemies** are **demon icons** that **shoot in a straight line**, without aiming directly at the player. There are a total of **5 enemies**.
 
-- **3 enemies shoot**
-- **2 enemies stand still while shaking**
-- **3 enemies move from side to side**
+After **all enemies are defeated**, a **final one appears**. This enemy has a **larger sprite**, is **invincible**, and **shoot directly at the player**. 
 
-After **all enemies are defeated**, a **final enemy appears**. This enemy is **immortal** and **aims directly at the player**.
+All **5 enemies** are positioned in a **horizontal line**.
 
-In this level, the **player’s movement speed and fire rate are reduced**.
-
-There are **no rectangles** remaining in the center of the box.
+The **player** is positioned in the **upper half** of the playable area and can **move left and right**. The **enemies** are positioned in the **bottom half** of the box and **remain stationary**.

@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class EnemyAttack : MonoBehaviour
 {
-    public GameObject projectilePrefab;  
-    public float shootInterval = 2f;     
-    public float shootForce = 10f;       
+    public GameObject projectilePrefab;
+    public float shootInterval = 2f;
 
     private float timer;
+
+    public Transform projectileSpawn;
 
     void Update()
     {
@@ -21,12 +22,17 @@ public class EnemyAttack : MonoBehaviour
 
     void Shoot()
     {
-        GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+        GameObject projectile = Instantiate(
+            projectilePrefab,
+            projectileSpawn.position,
+            Quaternion.identity
+        );
 
-        Rigidbody rb = projectile.GetComponent<Rigidbody>();
-        if (rb != null)
+        Projectile projScript = projectile.GetComponent<Projectile>();
+
+        if (projScript != null)
         {
-            rb.linearVelocity = Vector3.up * shootForce;
+            projScript.SetDirection(Vector2.up);
         }
     }
 }
