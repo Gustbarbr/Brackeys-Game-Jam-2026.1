@@ -1,47 +1,39 @@
-using NUnit.Framework;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AllEnemiesDefeated : MonoBehaviour
 {
-    public GameObject thirdLevelSpecialEnemy;
-    public GameObject fourthLevelSpecialEnemy;
+    [SerializeField] private GameObject specialEnemy;
 
+    private int initialEnemyCount;
     private bool specialSpawned = false;
+
+    void Start()
+    {
+        initialEnemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+    }
 
     void Update()
     {
         if (specialSpawned) return;
 
-        if (EnemiesDefeated())
+        int currentEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
+
+        if (initialEnemyCount > 0 && currentEnemies == 0)
         {
             SpawnSpecialEnemy();
             specialSpawned = true;
         }
     }
 
-    bool EnemiesDefeated()
-    {
-        return GameObject.FindGameObjectsWithTag("Enemy").Length == 0;
-    }
-
     void SpawnSpecialEnemy()
     {
-        string sceneName = SceneManager.GetActiveScene().name;
+        GameObject spawnPoint = GameObject.FindGameObjectWithTag("SpecialSpawn");
 
-        if (sceneName == "Third Level")
+        if (spawnPoint == null)
         {
-            Instantiate(thirdLevelSpecialEnemy, transform.position, Quaternion.identity);
-            EnemyHealth thirdLevelSpecialEnemyHp = thirdLevelSpecialEnemy.GetComponent<EnemyHealth>();
-            if(thirdLevelSpecialEnemyHp.currentHealth <= 0)
-            {
-                SceneManager.LoadScene("Fourth Level");
-            }
+            return;
         }
-        else if (sceneName == "Fourth Level")
-        {
-            Instantiate(fourthLevelSpecialEnemy, transform.position, Quaternion.identity);
-        }
+
+        Instantiate(specialEnemy, spawnPoint.transform.position, Quaternion.identity);
     }
 }

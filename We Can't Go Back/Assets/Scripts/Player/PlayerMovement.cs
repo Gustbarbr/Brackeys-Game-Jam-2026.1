@@ -80,8 +80,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
+
         float horizontal = moveInput.x;
-        float vertical = (currentLevel == 1 || currentLevel == 2) ? moveInput.y : 0f;
+        float vertical = (sceneName == "First Level" || sceneName == "Second Level") ? moveInput.y : 0f;
 
         Vector2 movement = new Vector2(horizontal, vertical);
         rb.linearVelocity = movement * speed;

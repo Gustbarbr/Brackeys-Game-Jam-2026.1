@@ -5,15 +5,14 @@ public class Projectile : MonoBehaviour
     public float speed = 10f;
     public int damage = 1;
 
+    public bool isFromSpecialEnemy = false;
+
     private Vector2 direction;
 
     public void SetDirection(Vector2 dir)
     {
         direction = dir.normalized;
-    }
 
-    void Start()
-    {
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         rb.linearVelocity = direction * speed;
     }
@@ -23,8 +22,16 @@ public class Projectile : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             PlayerHealth player = collision.GetComponent<PlayerHealth>();
+
             if (player != null)
+            {
+                if (isFromSpecialEnemy)
+                {
+                    player.deathBySpecialEnemy = true;
+                }
+
                 player.TakeDamage(damage);
+            }
         }
 
         if (collision.CompareTag("Enemy"))
@@ -34,6 +41,9 @@ public class Projectile : MonoBehaviour
                 enemy.TakeDamage(damage);
         }
 
-        Destroy(gameObject);
+        if (!collision.CompareTag("Bullet"))
+        {
+            Destroy(gameObject);
+        }
     }
 }

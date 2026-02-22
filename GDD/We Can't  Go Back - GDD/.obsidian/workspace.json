@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ART DIRECTION.md",
+                "file": "LEVELS/THE FOURTH LEVEL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ART DIRECTION"
+              "title": "THE FOURTH LEVEL"
             }
           }
         ]
@@ -35,7 +35,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "ART DIRECTION.md",
+                "file": "LEVELS/THE FOURTH LEVEL.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -63,7 +63,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of ART DIRECTION"
+              "title": "Graph of THE FOURTH LEVEL"
             }
           }
         ]
@@ -230,6 +230,7 @@
   },
   "active": "4ea108fec1f540a9",
   "lastOpenFiles": [
+    "ART DIRECTION.md",
     "CORE MECHANICS.md",
     "GAME LOOP.md",
     "NARRATIVE.md",
@@ -237,7 +238,6 @@
     "LEVELS/THE THIRD LEVEL.md",
     "LEVELS/THE SECOND LEVEL.md",
     "LEVELS/THE FOURTH LEVEL.md",
-    "ART DIRECTION.md",
     "b.md",
     "a.md",
     "Yes.md",

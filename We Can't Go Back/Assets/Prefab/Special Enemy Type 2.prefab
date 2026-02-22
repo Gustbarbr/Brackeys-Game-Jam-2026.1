@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3121862018133728284}
-  - component: {fileID: 2261773543721611759}
   - component: {fileID: 5233313370330482236}
+  - component: {fileID: 2083460501278734466}
   m_Layer: 0
   m_Name: Special Enemy Type 2
   m_TagString: Untagged
@@ -34,19 +34,6 @@ Transform:
   - {fileID: 8732987240657132700}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2261773543721611759
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7524516868431390003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac2e2320af8139149a6b039ce660c5d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  maxHealth: 3
 --- !u!212 &5233313370330482236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105,6 +92,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2083460501278734466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7524516868431390003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 680ee6eb8618e534caec8176ed08bf1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyApproachTrigger
+  speed: 1
+  triggerDistance: 0.3
+  fadeController: {fileID: 0}
 --- !u!1 &8126416420124556051
 GameObject:
   m_ObjectHideFlags: 0

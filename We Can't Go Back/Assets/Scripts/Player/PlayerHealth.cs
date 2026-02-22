@@ -4,7 +4,9 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 3;
-    private int currentHealth;
+    public int currentHealth;
+
+    public bool deathBySpecialEnemy = false;
 
     void Start()
     {
@@ -26,16 +28,20 @@ public class PlayerHealth : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         string sceneName = currentScene.name;
 
-        currentHealth = maxHealth;
-
-        if (sceneName == "Third Level")
+        if (sceneName == "Third Level" && !deathBySpecialEnemy)
         {
             SceneManager.LoadScene("Third Level");
         }
-
-        if (sceneName == "Fourth Level")
+        else if (sceneName == "Third Level" && deathBySpecialEnemy)
+        {
+            deathBySpecialEnemy = false;
+            SceneManager.LoadScene("Fourth Level");
+        }
+        else if (sceneName == "Fourth Level")
         {
             SceneManager.LoadScene("Fourth Level");
         }
+
+        currentHealth = maxHealth;
     }
 }
