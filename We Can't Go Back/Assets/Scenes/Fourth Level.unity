@@ -1279,6 +1279,8 @@ MonoBehaviour:
   messageText: {fileID: 1331857239}
   message: "HQ: Deploying a substitute for Soldier 1402\u2026"
   textDuration: 3
+  player: {fileID: 0}
+  enemy: {fileID: 0}
 --- !u!1 &1105196949
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,7 +1954,7 @@ MonoBehaviour:
   dialogueText: {fileID: 1913517905}
   typingSpeed: 0.04
   dialogueLines:
-  - "I\u2019m only following orders\u2026"
+  - "Sorry, Mom. I won\u2019t be coming back."
 --- !u!1 &2036062280
 GameObject:
   m_ObjectHideFlags: 0

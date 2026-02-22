@@ -5,4 +5,4 @@
 It **appears** on the screen **during the showcase** of the **first phrase** of the game:  
 **“Don’t worry, Mom. I’ll be back soon.”**
 
-The player appears at his mom side, and he must walks to the exit of his house.
+The player appears at his mom (heart sprite) side, and he must walks to the exit of his house.

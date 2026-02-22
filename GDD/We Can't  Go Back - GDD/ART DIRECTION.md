@@ -28,4 +28,20 @@
 	* **Enemies:** abstract representations, not literal.
 
 * **SPRITES**
-	* (WORK IN PROGRESS)
+	* **First Photo**![[First Level.png]]
+	* **Second Photo**![[Second Level.png]]
+	* **Third Photo**![[Third Level.png]]
+	* **Fourth Photo**![[Fourth Level.png]]
+	* **Player / Mother / Enemy (Fourth Level)**
+				![[Heart.png]]
+	
+	* **Enemy (Third Level)**
+				![[Enemy Type 1.png]]
+	* **Bullet**
+				![[Bullet.png]]
+	* **Main Menu**![[Main Menu.png]]
+	* **Play Button**
+				![[Play Button.png]]
+	* **Exit Button**
+				![[Quit Button.png]]
+	* **Icon**![[Icon.png]]
